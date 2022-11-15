@@ -1,4 +1,5 @@
 {
+  "home-page": "https://github.com/sensational11/Text-Editor",
   "name": "text-editor",
   "version": "1.0.0",
   "description": "This is the challenge for text-editor.",
@@ -6,10 +7,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && cd server && node server.js",
-      "server": "cd server nodemon server.js --ignore client",
-      "build": "cd client && npm run build",
-      "client": "cd client && npm start"
-
+    "server": "cd server nodemon server.js --ignore client",
+    "build": "cd client && npm run build",
+    "client": "cd client && npm start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -27,5 +29,8 @@
     "express": "^4.18.2",
     "idb": "^7.1.1",
     "if-env": "^1.0.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
