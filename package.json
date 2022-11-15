@@ -4,7 +4,13 @@
   "description": "This is the challenge for text-editor.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+      "start": "cd server && node server.js",
+      "server": "cd server nodemon server.js --ignore client",
+      "build": "cd client && npm run build",
+      "client": "cd client && npm start"
+
   },
   "repository": {
     "type": "git",
@@ -18,6 +24,7 @@
   },
   "homepage": "https://github.com/sensational11/Text-Editor#readme",
   "dependencies": {
+    "concurrently": "^7.5.0",
     "express": "^4.18.2",
     "idb": "^7.1.1",
     "if-env": "^1.0.4"
