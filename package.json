@@ -1,0 +1,25 @@
+{
+  "name": "text-editor",
+  "version": "1.0.0",
+  "description": "This is the challenge for text-editor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sensational11/Text-Editor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sensational11/Text-Editor/issues"
+  },
+  "homepage": "https://github.com/sensational11/Text-Editor#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "idb": "^7.1.1",
+    "if-env": "^1.0.4"
+  }
+}
